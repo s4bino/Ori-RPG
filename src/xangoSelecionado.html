@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xangô - Orí: A Jornada dos Orixás</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1a1a1a, #8b0000);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Efeito de raios e trovões */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/lightning.png');
+            opacity: 0.3;
+            animation: flash 5s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes flash {
+            0%, 100% {
+                opacity: 0.3;
+            }
+            50% {
+                opacity: 0.6;
+            }
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            background: rgba(139, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(255, 69, 0, 0.5);
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-family: 'Cinzel', serif;
+            color: #ff4500;
+            text-shadow: 3px 3px 10px rgba(255, 69, 0, 0.7);
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 20px 0;
+            color: #f0f0f0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        ul li {
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #ccc;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #1a1a1a;
+            background: #ff4500;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .botao:hover {
+            background: #cc3700;
+            transform: scale(1.1);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Efeito de raios e trovões -->
+    <div class="container">
+        <h1>Xangô</h1>
+        <p>
+            Xangô é o orixá da justiça, dos raios e trovões. Ele é conhecido por sua força, coragem e senso de justiça. Sua energia é imponente e poderosa.
+        </p>
+        <ul>
+            <li><strong>Habilidade:</strong> Controle sobre raios e trovões</li>
+            <li><strong>Elemento:</strong> Fogo</li>
+            <li><strong>Arma:</strong> Machado Duplo</li>
+            <li><strong>Cores:</strong> Vermelho e branco</li>
+        </ul>
+        <a href="#" class="botao">Voltar para Seleção</a>
+    </div>
+</body>
+</html>
