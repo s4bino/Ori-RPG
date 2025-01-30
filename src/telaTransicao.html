@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal - Orí: A Jornada dos Orixás</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Efeito de partículas místicas */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10.01%);
+            background-size: 20px 20px;
+            animation: moveParticles 10s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes moveParticles {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-200px);
+            }
+        }
+
+        .menu {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+            max-width: 600px;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-family: 'Cinzel', serif;
+            color: #ffcc00;
+            text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.7);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.7);
+            }
+            100% {
+                text-shadow: 3px 3px 20px rgba(255, 204, 0, 1);
+            }
+        }
+
+        .botoes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #1a1a1a;
+            background: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background: #e6b800;
+            transform: scale(1.1);
+        }
+
+        /* Padrões étnicos decorativos */
+        .decorativo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url('https://www.transparenttextures.com/patterns/african-cloth.png');
+            opacity: 0.2;
+            z-index: 0;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fundo decorativo -->
+    <div class="decorativo"></div>
+
+    <!-- Conteúdo do menu -->
+    <div class="menu">
+        <h1>Orí</h1>
+        <h2>A Jornada dos Orixás</h2>
+
+        <!-- Botões -->
+        <div class="botoes">
+            <a href="#" class="botao">Regras do Jogo</a>
+            <a href="#" class="botao">Seleção de Orixás</a>
+        </div>
+    </div>
+</body>
+</html>
