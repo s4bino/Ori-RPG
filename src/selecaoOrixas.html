@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Orixás - Orí: A Jornada dos Orixás</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Efeito de partículas místicas */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10.01%);
+            background-size: 20px 20px;
+            animation: moveParticles 10s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes moveParticles {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-200px);
+            }
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-family: 'Cinzel', serif;
+            color: #ffcc00;
+            text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.7);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.7);
+            }
+            100% {
+                text-shadow: 3px 3px 20px rgba(255, 204, 0, 1);
+            }
+        }
+
+        .personagens {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/african-cloth.png');
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #ffcc00;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #ffcc00;
+            text-shadow: 1px 1px 5px rgba(255, 204, 0, 0.5);
+            position: relative;
+            z-index: 2;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.4;
+            margin: 10px 0;
+            color: #f0f0f0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card ul li {
+            font-size: 0.9rem;
+            margin: 5px 0;
+            color: #ccc;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #1a1a1a;
+            background: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+            margin-top: 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .botao:hover {
+            background: #e6b800;
+            transform: scale(1.1);
+        }
+
+        /* Padrões étnicos decorativos */
+        .decorativo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url('https://www.transparenttextures.com/patterns/african-cloth.png');
+            opacity: 0.2;
+            z-index: 0;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fundo decorativo -->
+    <div class="decorativo"></div>
+
+    <!-- Conteúdo da página -->
+    <div class="container">
+        <h1>Selecione seu Orixá</h1>
+        <div class="personagens">
+            <!-- Card 1: Oxum -->
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Oxum">
+                <h2>Oxum</h2>
+                <p>A orixá das águas doces, do amor e da fertilidade.</p>
+                <ul>
+                    <li><strong>Habilidade:</strong> Cura e persuasão</li>
+                    <li><strong>Elemento:</strong> Água</li>
+                    <li><strong>Arma:</strong> Espelho Mágico</li>
+                </ul>
+                <a href="#" class="botao">Escolher Oxum</a>
+            </div>
+
+            <!-- Card 2: Xangô -->
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Xangô">
+                <h2>Xangô</h2>
+                <p>O orixá da justiça, dos raios e trovões.</p>
+                <ul>
+                    <li><strong>Habilidade:</strong> Controle sobre raios</li>
+                    <li><strong>Elemento:</strong> Fogo</li>
+                    <li><strong>Arma:</strong> Machado Duplo</li>
+                </ul>
+                <a href="#" class="botao">Escolher Xangô</a>
+            </div>
+
+            <!-- Card 3: Iemanjá -->
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Iemanjá">
+                <h2>Iemanjá</h2>
+                <p>A orixá dos mares e protetora das famílias.</p>
+                <ul>
+                    <li><strong>Habilidade:</strong> Proteção e purificação</li>
+                    <li><strong>Elemento:</strong> Água salgada</li>
+                    <li><strong>Arma:</strong> Concha Mágica</li>
+                </ul>
+                <a href="#" class="botao">Escolher Iemanjá</a>
+            </div>
+
+            <!-- Card 4: Ogum -->
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Ogum">
+                <h2>Ogum</h2>
+                <p>O orixá da guerra, da tecnologia e da metalurgia.</p>
+                <ul>
+                    <li><strong>Habilidade:</strong> Força e estratégia</li>
+                    <li><strong>Elemento:</strong> Terra</li>
+                    <li><strong>Arma:</strong> Espada de Ferro</li>
+                </ul>
+                <a href="#" class="botao">Escolher Ogum</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
