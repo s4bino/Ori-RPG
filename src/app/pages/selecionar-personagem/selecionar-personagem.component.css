@@ -1,0 +1,76 @@
+.selecionar-personagem-container {
+    padding: 2rem;
+}
+
+/* Estilo do card */
+.card {
+    border: 2px solid #ffc107;
+    /* Borda dourada */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    /* Gradiente escuro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Efeito de levantar ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.3);
+    /* Sombra dourada */
+}
+
+.img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 200px;
+    /* Altura fixa para a imagem */
+    object-fit: cover;
+    /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+.card-img-top {
+    height: 500px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #e67e22;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d35400;
+}
+
+.background-image {
+    background-image: url('/assets/selection.webp');
+    height: 110vh;
+    background-size: cover;
+    min-height: 110vh;
+    background-size: 110%;
+    background-position: center;
+    filter: brightness(0.7);
+    position: absolute;
+    /* Aumenta ainda mais a altura */
+    z-index: -1;
+    animation: parallax 10s infinite linear;
+}
+
+@keyframes parallax {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+        /* Move a imagem mais para cima */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

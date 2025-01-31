@@ -1,0 +1,117 @@
+<div class="modal-content bg-dark text-white" *ngIf="personagem">
+    <!-- Corpo do modal -->
+    <div class="modal-body p-4"
+        style="background-image: url('/assets/card.webp'); background-size: cover; background-position: center;">
+
+        <!-- Cabeçalho do modal -->
+        <div class="p-4 rounded mb-4" style="background-color: rgba(31, 31, 31, 0.781);">
+            <h2 class="modal-title fw-bold text-warning mb-0">{{ personagem.nome }}</h2>
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                (click)="fecharModal()"></button>
+        </div>
+
+        <!-- Descrição -->
+        <div class="p-3 rounded mb-4" style="background-color: rgba(31, 31, 31, 0.781);">
+            <p class="card-text mb-0 text-light">{{ personagem.descricao }}</p>
+        </div>
+
+        <!-- Habilidades -->
+        <div class="p-3 rounded mb-4" style="background-color: rgba(31, 31, 31, 0.781);">
+            <h3 class="text-warning d-flex justify-content-between align-items-center mb-3">
+                <span>Habilidades</span>
+                <button class="btn btn-sm btn-warning" (click)="adicionarHabilidade(personagem)">
+                    <span class="material-icons">add</span>
+                </button>
+            </h3>
+            <ul class="list-unstyled">
+                <li *ngFor="let habilidade of personagem.habilidades" class="mb-2 d-flex align-items-center">
+                    <span class="material-icons text-warning me-2">star</span>
+                    <span class="text-light">{{ habilidade }}</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Atributos -->
+        <div class="p-3 rounded mb-4" style="background-color: rgba(31, 31, 31, 0.781);">
+            <h3 class="text-warning mb-3">Atributos</h3>
+            <ul class="list-unstyled">
+                <li class="mb-2 d-flex justify-content-between align-items-center">
+                    <span class="d-flex align-items-center">
+                        <span class="material-icons text-warning me-2">fitness_center</span>
+                        <strong class="text-light">FOR:</strong>
+                        <span class="text-light ms-2">{{ personagem.atributos['FOR'] }}</span>
+                    </span>
+                    <button class="btn btn-sm btn-warning" (click)="incrementarAtributo(personagem, 'FOR')">
+                        <span class="material-icons">add</span>
+                    </button>
+                </li>
+                <li class="mb-2 d-flex justify-content-between align-items-center">
+                    <span class="d-flex align-items-center">
+                        <span class="material-icons text-warning me-2">directions_run</span>
+                        <strong class="text-light">DES:</strong>
+                        <span class="text-light ms-2">{{ personagem.atributos['DES'] }}</span>
+                    </span>
+                    <button class="btn btn-sm btn-warning" (click)="incrementarAtributo(personagem, 'DES')">
+                        <span class="material-icons">add</span>
+                    </button>
+                </li>
+                <li class="mb-2 d-flex justify-content-between align-items-center">
+                    <span class="d-flex align-items-center">
+                        <span class="material-icons text-warning me-2">health_and_safety</span>
+                        <strong class="text-light">CON:</strong>
+                        <span class="text-light ms-2">{{ personagem.atributos['CON'] }}</span>
+                    </span>
+                    <button class="btn btn-sm btn-warning" (click)="incrementarAtributo(personagem, 'CON')">
+                        <span class="material-icons">add</span>
+                    </button>
+                </li>
+                <li class="mb-2 d-flex justify-content-between align-items-center">
+                    <span class="d-flex align-items-center">
+                        <span class="material-icons text-warning me-2">psychology</span>
+                        <strong class="text-light">INT:</strong>
+                        <span class="text-light ms-2">{{ personagem.atributos['INT'] }}</span>
+                    </span>
+                    <button class="btn btn-sm btn-warning" (click)="incrementarAtributo(personagem, 'INT')">
+                        <span class="material-icons">add</span>
+                    </button>
+                </li>
+                <li class="mb-2 d-flex justify-content-between align-items-center">
+                    <span class="d-flex align-items-center">
+                        <span class="material-icons text-warning me-2">self_improvement</span>
+                        <strong class="text-light">SAB:</strong>
+                        <span class="text-light ms-2">{{ personagem.atributos['SAB'] }}</span>
+                    </span>
+                    <button class="btn btn-sm btn-warning" (click)="incrementarAtributo(personagem, 'SAB')">
+                        <span class="material-icons">add</span>
+                    </button>
+                </li>
+                <li class="mb-2 d-flex justify-content-between align-items-center">
+                    <span class="d-flex align-items-center">
+                        <span class="material-icons text-warning me-2">face</span>
+                        <strong class="text-light">CAR:</strong>
+                        <span class="text-light ms-2">{{ personagem.atributos['CAR'] }}</span>
+                    </span>
+                    <button class="btn btn-sm btn-warning" (click)="incrementarAtributo(personagem, 'CAR')">
+                        <span class="material-icons">add</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Equipamentos -->
+        <div class="p-3 rounded" style="background-color: rgba(31, 31, 31, 0.781);">
+            <h3 class="text-warning d-flex justify-content-between align-items-center mb-3">
+                <span>Equipamentos</span>
+                <button class="btn btn-sm btn-warning" (click)="adicionarEquipamento(personagem)">
+                    <span class="material-icons">add</span>
+                </button>
+            </h3>
+            <ul class="list-unstyled">
+                <li *ngFor="let equipamento of personagem.equipamentos" class="mb-2 d-flex align-items-center">
+                    <span class="material-icons text-warning me-2">shield</span>
+                    <span class="text-light">{{ equipamento }}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

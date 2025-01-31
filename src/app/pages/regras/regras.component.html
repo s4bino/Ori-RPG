@@ -1,0 +1,163 @@
+<div class="regras-container p-4"
+    style="background-image: url('/assets/background.webp'); background-size: cover; background-position: center;">
+    <div class="container bg-dark text-white p-4 rounded" style="background-color: rgba(31, 31, 31, 0.9);">
+        <h1 class="text-center text-warning fw-bold mb-4">Regras do Jogo: Orí - A Jornada dos Orixás</h1>
+
+        <!-- Introdução -->
+        <div class="p-3 rounded mb-4" style="background-color: rgba(51, 51, 51, 0.8);">
+            <h2 class="text-warning fw-bold mb-3">1. Introdução</h2>
+            <p class="text-light">
+                "Orí: A Jornada dos Orixás" é um RPG de mesa onde os jogadores assumem o papel de
+                <strong>orixás</strong> ou <strong>heróis inspirados por essas divindades</strong>, embarcando em uma
+                jornada épica para restaurar o equilíbrio do mundo. O jogo combina <strong>narrativa
+                    colaborativa</strong>, <strong>desafios estratégicos</strong> e <strong>elementos
+                    educativos</strong>, promovendo a conscientização sobre a cultura e a história afro-brasileira.
+            </p>
+        </div>
+
+        <!-- Criação de Personagens -->
+        <div class="p-3 rounded mb-4" style="background-color: rgba(51, 51, 51, 0.8);">
+            <h2 class="text-warning fw-bold mb-3">2. Criação de Personagens</h2>
+
+            <h3 class="text-warning fw-bold mb-2">Passo 1: Escolha do Orixá</h3>
+            <p class="text-light">
+                Cada jogador escolhe um <strong>orixá</strong> como base para seu personagem. Cada orixá tem habilidades
+                únicas, relacionadas às suas características mitológicas. Exemplos:
+            </p>
+            <ul class="text-light">
+                <li><span class="material-icons text-warning me-2">star</span><strong>Oxum</strong>: Habilidades de cura
+                    e persuasão.</li>
+                <li><span class="material-icons text-warning me-2">star</span><strong>Xangô</strong>: Controle sobre
+                    raios e trovões.</li>
+                <li><span class="material-icons text-warning me-2">star</span><strong>Iemanjá</strong>: Proteção e
+                    purificação.</li>
+                <li><span class="material-icons text-warning me-2">star</span><strong>Ogum</strong>: Força física e
+                    estratégia em batalhas.</li>
+            </ul>
+
+            <h3 class="text-warning fw-bold mb-2">Passo 2: Atributos</h3>
+            <p class="text-light">
+                Os personagens têm seis atributos principais, que definem suas habilidades e capacidades:
+            </p>
+            <ul class="text-light">
+                <li><span class="material-icons text-warning me-2">fitness_center</span><strong>Força (FOR)</strong>:
+                    Capacidade física e poder de combate.</li>
+                <li><span class="material-icons text-warning me-2">directions_run</span><strong>Destreza (DES)</strong>:
+                    Agilidade, reflexos e precisão.</li>
+                <li><span class="material-icons text-warning me-2">health_and_safety</span><strong>Constituição
+                        (CON)</strong>: Resistência física e saúde.</li>
+                <li><span class="material-icons text-warning me-2">psychology</span><strong>Inteligência (INT)</strong>:
+                    Conhecimento, raciocínio e magia.</li>
+                <li><span class="material-icons text-warning me-2">self_improvement</span><strong>Sabedoria
+                        (SAB)</strong>: Percepção, intuição e conexão espiritual.</li>
+                <li><span class="material-icons text-warning me-2">face</span><strong>Carisma (CAR)</strong>: Persuasão,
+                    liderança e influência.</li>
+            </ul>
+            <p class="text-light">
+                <strong>Pontuação Inicial</strong>: Os jogadores distribuem <strong>72 pontos</strong> entre os
+                atributos, com um mínimo de 8 e um máximo de 18 em cada.
+            </p>
+
+            <h3 class="text-warning fw-bold mb-2">Passo 3: Habilidades e Talentos</h3>
+            <p class="text-light">
+                Cada orixá tem <strong>habilidades únicas</strong> relacionadas ao seu domínio. Além disso, os jogadores
+                podem escolher <strong>talentos</strong> que refletem a personalidade e o histórico do personagem.
+            </p>
+            <button class="btn btn-warning" (click)="abrirModal('habilidades')">
+                Ver Habilidades Disponíveis
+            </button>
+
+            <p class="text-light">
+
+            <h3 class="text-warning fw-bold mb-2">Passo 4: Equipamento</h3>
+            <p class="text-light">
+                Os personagens começam com equipamentos básicos, como armas, armaduras e itens mágicos relacionados ao
+                seu orixá. Exemplos:
+            </p>
+            <button class="btn btn-warning" (click)="abrirModal('equipamentos')">
+                Ver Equipamentos Disponíveis
+            </button>
+        </div>
+
+        <!-- Sistema de Jogo -->
+        <div class="p-3 rounded mb-4" style="background-color: rgba(51, 51, 51, 0.8);">
+            <h2 class="text-warning fw-bold mb-3">3. Sistema de Jogo</h2>
+            <p class="text-light">
+                O jogo utiliza dados de RPG (D4, D6, D8, D10, D12, D20) para resolver ações, combates e desafios. O
+                <strong>D20</strong> é o principal dado, usado para testes de atributos e combate.
+            </p>
+            <h3 class="text-warning fw-bold mb-2">Testes de Atributos</h3>
+            <p class="text-light">
+                Quando um personagem tenta realizar uma ação desafiadora, o mestre pede um <strong>teste de
+                    atributo</strong>. O jogador rola um D20 e soma o valor do atributo relevante. Se o resultado for
+                igual ou maior que a <strong>dificuldade (DC)</strong> definida pelo mestre, a ação é bem-sucedida.
+            </p>
+            <h3 class="text-warning fw-bold mb-2">Combate</h3>
+            <p class="text-light">
+                O combate é dividido em <strong>turnos</strong>, onde cada personagem e inimigo realiza uma ação. A
+                ordem de iniciativa é determinada por um teste de <strong>Destreza</strong>.
+            </p>
+            <h3 class="text-warning fw-bold mb-2">Magia</h3>
+            <p class="text-light">
+                Alguns orixás têm habilidades mágicas, que consomem <strong>pontos de magia (PM)</strong>. Cada
+                personagem tem um número limitado de PM, que pode ser recuperado descansando ou usando itens especiais.
+            </p>
+        </div>
+
+        <!-- Níveis e Progressão -->
+        <div class="p-3 rounded mb-4" style="background-color: rgba(51, 51, 51, 0.8);">
+            <h2 class="text-warning fw-bold mb-3">4. Níveis e Progressão</h2>
+            <p class="text-light">
+                Os personagens ganham <strong>XP</strong> ao completar missões, derrotar inimigos e superar desafios. Ao
+                acumular XP suficiente, eles sobem de nível, ganhando:
+            </p>
+            <ul class="text-light">
+                <li><span class="material-icons text-warning me-2">star</span><strong>Pontos de Vida (PV)</strong>
+                    adicionais.</li>
+                <li><span class="material-icons text-warning me-2">star</span><strong>Novas habilidades</strong> ou
+                    <strong>melhorias</strong> em habilidades existentes.
+                </li>
+                <li><span class="material-icons text-warning me-2">star</span><strong>Pontos de Atributo</strong> para
+                    aumentar seus atributos.</li>
+            </ul>
+        </div>
+
+        <!-- Conclusão -->
+        <div class="p-3 rounded mb-4" style="background-color: rgba(51, 51, 51, 0.8);">
+            <h2 class="text-warning fw-bold mb-3">5. Conclusão</h2>
+            <p class="text-light">
+                "Orí: A Jornada dos Orixás" é um RPG que combina <strong>ação</strong>, <strong>estratégia</strong> e
+                <strong>narrativa rica</strong>, oferecendo uma experiência imersiva na mitologia africana e
+                afro-brasileira. Com regras simples e flexíveis, o jogo é acessível para iniciantes e desafiador para
+                veteranos.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal de Habilidades -->
+<div *ngIf="modalAberto === 'habilidades'" class="modal">
+    <div class="modal-content">
+        <span class="close" (click)="fecharModal()">&times;</span>
+        <h2>Habilidades Disponíveis</h2>
+        <ul>
+            <li *ngFor="let habilidade of habilidades">
+                <strong>{{ habilidade.nome }}</strong>: {{ habilidade.descricao }}
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Modal de Equipamentos -->
+<div *ngIf="modalAberto === 'equipamentos'" class="modal">
+    <div class="modal-content">
+        <span class="close" (click)="fecharModal()">&times;</span>
+        <h2>Equipamentos Disponíveis</h2>
+        <ul>
+            <li *ngFor="let equipamento of equipamentos">
+                <strong>{{ equipamento.nome }}</strong>: {{ equipamento.descricao }}
+            </li>
+        </ul>
+    </div>
+</div>

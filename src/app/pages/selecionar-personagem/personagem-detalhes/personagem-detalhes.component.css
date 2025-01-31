@@ -1,0 +1,70 @@
+/* Estilo dos fundos opacos */
+.rounded {
+    border-radius: 10px;
+    /* Bordas arredondadas */
+}
+
+/* Estilo dos títulos */
+h2,
+h3 {
+    font-family: 'Cinzel', serif;
+    /* Fonte estilo RPG */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ffc107;
+    /* Cor dourada */
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffc107;
+    /* Cor dourada */
+}
+
+/* Estilo dos textos */
+.card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+    /* Texto claro */
+}
+
+/* Estilo das listas */
+ul {
+    padding-left: 0;
+}
+
+li {
+    font-size: 1rem;
+    color: #fff;
+    /* Texto branco */
+}
+
+/* Estilo dos ícones */
+.material-icons {
+    font-size: 1.5rem;
+    /* Tamanho maior */
+}
+
+/* Estilo dos botões */
+.btn-warning {
+    background-color: #ffc107;
+    /* Cor dourada */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    /* Cor dourada mais escura ao passar o mouse */
+}
+
+/* Estilo do botão de fechar */
+.btn-close-white {
+    filter: invert(1);
+    /* Ícone branco */
+}

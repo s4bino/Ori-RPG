@@ -1,0 +1,76 @@
+.menu-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.background-image {
+    background-image: url('/assets/background.webp');
+    height: 100vh;
+    background-size: cover;
+    min-height: 110vh;
+    background-position: center;
+    filter: brightness(0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    /* Aumenta ainda mais a altura */
+    z-index: -1;
+    animation: parallax 10s infinite linear;
+}
+
+@keyframes parallax {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+        /* Move a imagem mais para cima */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.content {
+    padding-top: 100px;
+    /* Move o conteúdo para cima */
+}
+
+.card {
+    border: 2px solid #e67e22;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    /* Garante que os cards tenham a mesma altura */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.5);
+}
+
+.btn-primary {
+    background-color: #e67e22;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d35400;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.75rem;
+}
+
+.card-text {
+    font-size: 1.1rem;
+}

@@ -1,0 +1,18 @@
+<div class="background-image position-absolute top-0 start-0 w-100 h-100"></div>
+
+<div class="selecionar-personagem-container">
+    <h1 class="text-center text-white mb-5 display-4 fw-bold">Selecione Seu Personagem</h1>
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-3" *ngFor="let personagem of personagens">
+            <div class="card bg-dark text-white h-100">
+                <img [src]="'/assets/' + removerAcentos(personagem.nome.toLowerCase()) + '.png'" class="card-img-top"
+                    [alt]="personagem.nome">
+                <div class="card-body">
+                    <h2 class="card-title fw-bold">{{ personagem.nome }}</h2>
+                    <p class="card-text">{{ personagem.descricao }}</p>
+                    <button class="btn btn-primary w-100" (click)="abrirModalDetalhes(personagem)">Ver Detalhes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
